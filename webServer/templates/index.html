@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flask-example</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="LERAMIZ Landing Page Template">
+    <meta name="keywords" content="LERAMIZ, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon" />
+
+    <!-- Stylesheets -->
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/switch.css')}}" />
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}" /> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/font-awesome.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/animate.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <!-- material designa implement -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-offset="50">
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+    <!-- Header section -->
+    <header class="header-section" style="background-color:rgb(129, 77, 77);">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-6 header-top-left">
+                        <div class="top-info">
+                            <i class="fa fa-phone"></i>
+                            팀 연락처
+                        </div>
+                        <div class="top-info">
+                            <i class="fa fa-envelope"></i>
+                            이메일주소
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-6 col-md-6 text-right text-lg-right header-top-right">
+                        <div class="top-social">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-4">
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4">
+                    <h3  style="margin-top:0px; color:white"> project name!</h3>
+                </div>
+                <div class="col-4">
+                    <div class="site-navbar">
+                        <!-- <a href="#" class="site-logo"><img src="/img/logo.png" style="width:auto;height:80px" alt=""></a> -->
+                        <div class="nav-switch">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                        <ul class="main-menu">
+                            <li><a href="/">
+                                    혹시
+                                </a></li>
+                            <!-- <li><a href="categories.html">FEATURED LISTING</a></li>
+                                                            <li><a href="about.html">ABOUT US</a></li> -->
+                            <li><a href="/">
+                                    페이지
+                                </a></li>
+                            <li><a href="/">
+                                    더있어야하면
+                                </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Hero section -->
+    <section class="services-section spad">
+        <div class="container text-center text-black" style="margin-top:130px;">
+            <div class="row">
+                <h2 class="text-center" style="padding-bottom:30px">아주 간단 페이지.</h2>
+                <br><br>
+                <div class="col-lg-6 col-xs-12" style="overflow: hidden">
+
+                    어떤 값들이 들어간다.
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    <div class="row text-center">
+                        <button id="LED" type="button" class="btn btn-primary active text-center"
+                            style="margin-top:30px;width:200px;">
+                            릴레이 OFF</button>
+                        <br>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-xs-6">
+                            <button id="button-left" type="button" class="btn btn-primary active text-center"
+                                style="margin-top:30px;width:150px;">
+                                좌</button>
+                        </div>
+                        <div class="col-lg-6 col-xs-6">
+                            <button id="button-right" type="button" class="btn btn-primary active text-center"
+                                style="margin-top:30px;width:150px;">
+                                우</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top:30px">
+                        <div class="panel panel-default text-left">
+                            <div class="panel-heading">장애물 등 메시지 왔을떄</div>
+                            <div class="panel-body">내부에 띄워준다.</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section" style="background-color:black">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-widget">
+
+                    <p>팀 소개<br>어떠어떠한 팀이다.</p>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 footer-widget">
+                    <div class="contact-widget">
+                        <h5 class="fw-title">CONTACT US</h5>
+                        <p><i class="fa fa-map-marker"></i>04620 중구 필동로 1길 30 동국대학교</p>
+                        <p><i class="fa fa-phone"></i>전화 : 010-5678-3431</p>
+                        <p><i class="fa fa-envelope"></i>jeff8014@gmail.com</p>
+                        <p><i class="fa fa-clock-o"></i>월 - 금, 12AM ~ 12PM</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 footer-widget">
+                    <div class="map-footer">
+
+                        <div class="row" id="map-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+
+                <div class="copyright">
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <!-- Footer section end -->
+
+
+</body>
+
+
+<!--====== Javascripts & Jquery ======-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/masonry.pkgd.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/magnific-popup.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
+<script src="{{url_for('static', filename='js/guage.js')}}"></script>
+<script>
+    let led_status = 0;
+    $(function () {
+        $("#LED").click(function () {
+            if (led_status == 0) {
+                led_status = 1;
+                $("#LED").fadeTo('slow', 1);
+                $("#LED").text("릴레이 켜짐");
+            }
+            else {
+                led_status = 0;
+                $("#LED").fadeTo('slow', 0.3);
+                $("#LED").text('릴레이 꺼짐');
+            }
+
+        });
+    })
+
+    $(document).ready(function () {
+        
+        $("#LED").fadeTo('slow', 0.3);
+        $("#LED").text("전원 OFF");
+
+    })
+</script>
+
+</html>
